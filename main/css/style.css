@@ -1,0 +1,1016 @@
+/* Isso ta totalmente um Frankstain,
+pois não consegui organizar minhas ideias
+muito bem, e acabou dando nisso... Não me garanto
+na responsividade e ainda preciso
+arrumar isso, mas está um pouco complicado.*/
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Gothic", sans-serif;
+}
+
+body{
+    display: flex;
+    background-color: #313131;
+    width: 100%;
+    height: 100%;
+}
+
+#nome_logotipo{
+    font-size: 25px;
+}
+
+#separação{
+    margin-bottom: 35px;
+}
+
+#conteudo_sidebar{
+    padding-left: 16px;
+    padding-top: 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#side_items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.items{
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.items.active{
+    background: linear-gradient(to right, #B4BFF5,#7789D8);
+    
+}
+
+.items a:hover:not(.active){
+    color: #B4BFF5;
+    transition: 0.5s;
+}
+
+.items:hover:not(.active){
+    background-color: #8b8b8b;
+    color: #7789D8;
+    transition: 0.5s;
+}
+
+.items a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.items i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valorant_div{
+    display: flex;
+    background-color: #E52842;
+    width: 155px;
+    height:40px;
+    text-align: center;
+    margin-left: 4px;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.valorant_item img{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.valorant_div:hover{
+    background-color: #ff5260;
+    transition: 0.5s;
+    
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #707070;
+    width: 197px;
+    height: 100vh;
+    box-shadow: 5px 0px 0px #7789D8;
+    position: fixed;
+}
+
+#logotipo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+#logar{
+    border-top: 1px;
+}
+
+#btn{
+    width: 197px;
+    background-color: #303030;
+    display: flex;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    gap: 13px;
+    align-items: center;
+    text-align: start;
+}
+
+#login:hover:not(.active){
+    color: #6c6cff;
+    transition: 0.5s;
+}
+
+#logar_descrição{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#login{
+    color: #94a6f8;
+    cursor: pointer;
+    font-size: 17px;
+    width: max-content;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#perfil_image{
+    width: 45px;
+    cursor: pointer;
+}
+
+#logar_informações{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+header{
+    background-color: #707070;
+    box-shadow: 0px 10px 0px #7789D8;
+    margin-left: 200px;
+    height: 120px;
+}
+
+.nav_bar{
+    display: flex;
+    padding: 20px 30px;
+}
+
+.perfil_header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.suporte{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.suporte ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.separação_header{
+    display: flex;
+}
+
+.suporte_link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 1200px;
+}
+
+.nav_item{
+    margin: 5px;
+}
+
+.nav_link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #B4BFF5,#7789D8);
+}
+
+.nav_link:hover{
+    background: linear-gradient(to right, #818cc4,#505fa5);
+    transition: 0.5s;
+}
+
+.aplicativo button{
+    background-color: #E52842;
+    border: none;
+    margin-top: 19px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-left: 25px;
+}
+
+.aplicativo button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+footer{
+    width: 1701px;
+    color: #ffffff;
+    margin-left: 202px;
+}
+
+#footer_item{
+    background-color: #707070;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 75px; 
+}
+
+#footer_contatos img{
+    margin-left: 45px;
+}
+
+#footer_contatos p{
+    margin-left: 65px;
+    margin-bottom: 20px;
+}
+
+#footer_item h1{
+    margin-bottom: 10px;
+}
+
+#footer_media{
+    display: flex;
+    gap: 20px;
+}
+
+.footer_link{
+    text-decoration: none;
+}
+
+#footer_media .footer_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    background-image: linear-gradient(to right, #B4BFF5,#7789D8);
+    color: #000000;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+#footer_media .footer_link:hover{
+    opacity: 0.9;
+}
+
+#footer_media .footer_link i{
+    font-size: 19px;
+}
+
+.footer_lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer_lista .footer_link{
+    color: #c4c4c4;
+    transition: all 0.5s;
+}
+
+.footer_lista .footer_link:hover{
+    color: #6c6cff;
+}
+
+#footer_contato{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footer_contato p{
+    color: #c4c4c4;
+}
+
+#input_items{
+    display: flex;
+    align-items: center;
+    background-color: #272727;
+    border-radius: 0px 5px 5px 0px;
+}
+
+#input_items input{
+    all: unset;
+    padding: 7px;
+    width: 100%;
+}
+
+#input_items button{
+    background-color: #7789D8;
+    border: none;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 15px;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#input_items button:hover{
+    opacity: 0.9;
+}
+
+#noticias_contents{
+    display: flex;
+    width: 1500px;
+    border-radius: 20px;
+    margin-top: 110px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    justify-content: center;
+    background-color: #000000a2;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#noticias_contents h1{
+    font-size: 70px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#noticias_items{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#noticias_items img{
+    border-radius: 10px;
+    width: 600px;
+    transition: all .5s;
+}
+
+.saber_mais{
+    display: flex;
+    color: #E52842;
+    padding: 40px;
+    justify-content: end;
+    align-items: end;
+    font-size: 25px;
+    width: max-content;
+}
+
+.saber_mais:hover{
+    color: #ff5260;
+}
+
+#noticias_items li{
+    display: flex;
+    list-style: none;
+}
+
+.noticias_links{
+    text-decoration: none;
+}
+
+.data{
+    display: flex;
+    margin-top: 25px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.título{
+    display: flex;
+    font-size: 50px;
+    padding: 10px;
+    color: #ffffff;
+    margin-left: 30px;
+    transition: .5s;
+}
+
+.subtítulo{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    color: #7789D8;
+    margin-left: 30px;
+    transition: .5s;
+}
+
+#noticias_items img:hover{
+    opacity: .9;
+}
+
+.subtítulo:hover{
+    color: #6c6cff;
+}
+
+.título:hover{
+    color: #6c6cff;
+}
+
+#NA{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+#NA_h1{
+    background-color: #111111;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 1px 3px 1px #000000;
+}
+
+#NA h1{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.top_regional{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#cards{
+    border-radius: 15px;
+    margin-left: 40px;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+#cards_player{
+    background-color: #313131;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+    flex-direction: column;
+    box-shadow: 0px 7px 10px 5px #000000;
+}
+
+#pontos_player{
+    display: flex;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+
+#pontos_player h2{
+    font-size: 40px;
+    text-decoration:underline;
+    padding: 10px;
+}
+
+#pódio{
+    position: absolute; 
+    display: block;
+}
+
+#nickname_player{
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+#nickname_player p{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#nickname_player img{
+    margin: 3px;
+    width: 34px;
+    height: 30px;
+}
+
+#pixels_title{
+    display: flex;
+    margin-left: 245px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+#title_px{
+    display: flex;
+    background: linear-gradient(to right, #B4BFF5,#7789D8);
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px #000000;
+}
+
+#pixels_title p{
+    color: #ffffff;
+    font-size: 50px;
+    padding: 15px;
+    text-shadow: 2px 1px 10px #000000;
+}
+
+#pixels_title i{
+    color: #ffffff;
+    font-size: 50px;
+    padding: 15px;
+    text-shadow: 2px 1px 10px #000000;
+}
+
+#pixels_page{
+    display: flex;
+    justify-content: center;
+    margin-left: 380px;
+    border-radius: 15px;
+    padding: 20px;
+    width: min-content;
+    background-color: #707070;
+    margin-bottom: 100px;
+    box-shadow: 1px 1px 15px #000000;
+}
+
+.pixels_list{
+    flex-direction: column;
+    display: flex
+    flex-wrap: wrap;
+}
+
+.pixels{
+    
+    padding: 9px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #111111;
+}
+
+.pixels:hover img{
+    cursor: pointer;
+    opacity: .5;
+}
+
+.pixels img{
+    width: 420px;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+/* Comparado com o css acima, esse esta mais organizado,
+padronizar e arrumar o codigo depois...*/
+
+.estatisticas_title{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 230px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.estatisticas_ttl{
+    background: linear-gradient(to right, #B4BFF5,#7789D8);
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 1px 1px 15px #000000;
+    border-radius: 15px;
+}
+
+.estatisticas_ttl p{
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: 2px 1px 10px #000000;
+}
+
+.estatisticas{
+    padding: 20px;
+    display: flex;
+    margin-left: 205px;
+    justify-content: center;
+    color: white;
+    margin-bottom:40px;
+    margin-top: 30px;
+}
+
+table{
+    width: 85%;
+    border-collapse: collapse;
+    background-color: #2b2b2b;
+}
+
+th, td{
+    padding: 10px;
+    font-weight: 1;
+    text-align: left;
+}
+
+th{
+    background-color: #747474;
+}
+
+.agentes{
+    display: flex;
+    align-items: center;
+}
+
+.agentes span{
+    margin: 5px;
+}
+
+.agentes img{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.mapas img{
+    width: 60px;
+    height: 50px;
+}
+
+.porcentagem{
+    text-align: center;
+}
+
+.number_2{
+    background-color: #434343;
+}
+
+.win-porcentagem{
+    color: #7789D8;
+}
+
+.image_porcentagem img{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.tier{
+    font-size: 17px;
+}
+
+.armas span{
+    font-size: 17px;
+}
+
+.armas img{
+    width: max-content;
+    height: max-content;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 0px;
+}
+
+.vermelho_color{
+    background-color: #FF7F7E;
+}
+
+.laranja_color{
+    background-color: #f4b572;
+}
+
+.roxo_color{
+    background-color: #5e65e6;
+}
+
+.verde_color{
+    background-color: #93eba9;
+}
+
+.brimstone{
+    background-color: #f4b572;
+}
+
+.sova{
+    background-color: #70b9e3;
+}
+
+.viper{
+    background-color: #188032;
+}
+
+.azul_color{
+    background-color: #70b9e3;
+}
+
+.melhor{
+    background: linear-gradient(to right, #B4BFF5,#7789D8);
+}
+
+
+    /* Daqui para baixo o site começa a ficar mais responsivo*/
+
+@media (max-width: 600px) {
+    .login-box {
+        padding: 20px;
+    }
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .user-box input,
+    .user-box label {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .suporte_link {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    #noticias_contents h1 {
+        font-size: 50px;
+    }
+
+    .nav_list, .suporte {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #noticias_items img, .noticias_texto {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    #sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    #conteudo_sidebar {
+        padding: 0;
+    }
+
+    #noticias_contents {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .nav_list, .suporte {
+        display: none;
+    }
+}
+
+/* Mudar algumas coisas pois a responsividade está horrivel*/
+/* Um pouco mais organizado, pois procurei ajuda de um amigo
+padronizar isso...*/
+
+.container_seleção{
+    width: 500px;
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000080;
+    margin: 250px;
+    margin-left: 670px ;
+    color: #ffffff;
+}
+
+.informações{
+    position: relative;
+    text-align: center;
+}
+
+.mapa-image{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.informações h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.botões {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ataque{
+    background-color: #E52842;
+    font-size: 15px;
+}
+
+.agentes_pixels-selection{
+    padding: 10px;
+}
+
+.agentes_pixels-selection p{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.agentes_pixels-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.agentes_pixels{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #2b2b2b;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.agentes_pixels img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.agentes_pixels a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.agentes_pixels p{
+    padding: 5px;
+    font-size: 14px;
+}
+
+.agentes_pixels:hover{
+    transform: scale(1.05);
+    background-color: #3c3c3c;
+}
+
+.video_main{
+    background-color: #131313;
+    border-radius: 50px;
+    width: 1700px;
+    padding: 20px;
+    margin: 90px;
+}
+
+.video_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.video_card{
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.video_card:hover{
+    transform: scale(1.05);
+}
+
+.video_card img{
+    width: 100%;
+    height: auto;
+}
+
+.video_info{
+    padding: 10px;
+}
+
+.nomes{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.nome{
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.video_info p{
+    font-size: 25px;
+    margin: 10px 0;
+    color: white;
+}
+
+.video_info span{
+    font-size: 13px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.likes{
+    display: flex;
+    gap: 10px;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+}
+
+.popup_content{
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
